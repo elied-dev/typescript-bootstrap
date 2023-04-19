@@ -1,0 +1,32 @@
+{
+  "name": "typescript-bootstrap",
+  "version": "1.0.0",
+  "description": "A useful bootstrap tool for Typescript projects",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.8.7",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@promster/metrics": "^9.1.6",
+    "dotenv": "^16.0.3",
+    "path": "^0.12.7",
+    "pino": "^8.11.0",
+    "pino-pretty": "^10.0.0"
+  }
+}
