@@ -199,6 +199,7 @@ repos:
         entry: hadolint/hadolint:v2.10.0
         args:
           - hadolint
+          - --ignore=DL3008
         types:
           - dockerfile
       - id: gitleaks

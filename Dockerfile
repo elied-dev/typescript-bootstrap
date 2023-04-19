@@ -1,6 +1,9 @@
 FROM node:18-bullseye-slim
 
-RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends dumb-init \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
 
 ENV NODE_ENV production
 WORKDIR /usr/app
