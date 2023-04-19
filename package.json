@@ -4,9 +4,9 @@
   "description": "A useful bootstrap tool for Typescript projects",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "start:watch": "tsc-watch --onSuccess \"npm start\"",
     "build": "tsc",
-    "start": "node ./dist/index.js",
+    "start": "node ./dist/src/index.js",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
   },
   "author": "",

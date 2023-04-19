@@ -1,5 +1,5 @@
 {
-  "include": ["src/"],
+  "include": ["src/**/*"],
   "compilerOptions": {
     "baseUrl": "./",
     "module": "commonjs",
@@ -19,13 +19,6 @@
     "strictBindCallApply": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
-    "paths": {
-      "@src/*": ["src/*"],
-      // Just as an example of what you can
-      "@services/*": ["src/services/*"],
-      // Or even cooler
-      "@/*": ["src/*"]
-    }
+    "resolveJsonModule": true
   }
 }

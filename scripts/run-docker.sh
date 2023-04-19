@@ -19,7 +19,7 @@ function retrieve_arg_value() {
 for argument in "$@"; do
   case $argument in
     --watch)
-      DOCKER_CMD="npm run dev"
+      DOCKER_CMD="npm run start:watch"
       ;;
     --build)
       FORCE_BUILD=1

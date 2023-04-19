@@ -21,4 +21,4 @@ USER node
 
 # provide direct command instead of npm
 # node dist/src/main
-CMD ["dumb-init", "node", "dist/src/main"]
+CMD ["dumb-init", "node", "dist/src/index.js"]
