@@ -13,3 +13,7 @@ jobs:
           release-type: node
           package-name: typescript-bootstrap
           token: ${{ secrets.TOKEN_GITHUB }}
+          extra-files: |
+            package.json
+            package-lock.json
+            README.md
