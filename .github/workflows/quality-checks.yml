@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Quality Checks
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+    paths:
+      - .pre-commit-config.yaml
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+
+      - name: Run Pre Commit
+        uses: pre-commit/action@v3.0.0
